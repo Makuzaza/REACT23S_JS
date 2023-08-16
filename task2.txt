@@ -66,6 +66,8 @@ VM498:1 Uncaught SyntaxError: Unexpected identifier 'Fun'
 "Go To Helsinki Business College, they said. It'll Will Be 'Fun', they said."
 "'Go To Helsinki Business College,'" + " they said. " + "'It'll Will Be 'Fun','" + " they said."
 "'Go To Helsinki Business College,' they said. 'It'll Will Be 'Fun',' they said."
+"Go To Helsinki Business College," + ' It' + "`" + 'll Will Be "Fun",' + "they said."
+'Go To Helsinki Business College, It`ll Will Be "Fun",they said.'
 
 3 + "65" // 
 7 - "3" 
