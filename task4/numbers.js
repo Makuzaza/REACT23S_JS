@@ -146,22 +146,83 @@
 // average = sum / counter;
 // console.log('The average of the numbers is', average);
 
-let input;
-let countNumbers = 0; 
+// 8. 
+// let countNumbers;
+// let number;
+// let smallest;
+
+// do {
+//     countNumbers = Number(prompt('Enter, how many numbers do you want to input'));
+// } while (countNumbers < 0);
+
+// smallest = Number(prompt('Enter 1st number'));
+
+// for (let i = 1; i < countNumbers; i++) {
+//     let x = Number(prompt('Enter next number '));
+//     if (x < smallest) {
+//         smallest = x;
+//     }
+//     console.log(`on step ${i} the smallest number is ${smallest}`);
+// }
+// console.log('The smallest number is', smallest);
+
+// 9.
+// let biggest1;
+// let biggest2;
+
+// biggest1 = Number(prompt('Enter number 1'));
+// biggest2 = Number(prompt('Enter number 2'));
+// if (biggest2 > biggest1) {
+//     let temp = biggest1;
+//     biggest1 = biggest2;
+//     biggest2 = temp;
+// }
+// for (let i = 2; i < 10; i++) {
+//     let x = Number(prompt(`Enter number ${i+1}`));
+//     if (x > biggest2 && x < biggest1) {
+//         biggest2 = x;
+//     } else if (x > biggest2 && x > biggest1) {
+//         biggest2 = biggest1;
+//         biggest1 = x;
+//     }
+
+// console.log(`on step ${i} the biggest numbers are ${biggest1} and ${biggest2}`);
+// }
+// console.log('The biggest number are', biggest1, biggest2);
+
+// 10.
+let number;
+let biggest;
 let smallest;
+let sum = 0;
+let summa = 0;
+let average;
 
-countNumbers = Number(prompt('Enter, how many numbers do you want to input'));
+biggest = Number(prompt('Enter number 1'));
+smallest = Number(prompt('Enter number 2'));
+if (smallest > biggest) {
+    let temp = biggest;
+    biggest = smallest;
+    smallest = temp;
+}
+sum = biggest + smallest;
 
-do {
-    input = Number(prompt('Enter number'));
-    for (let i = 0; i < countNumbers; i++) {
-            input = Number(prompt('Enter a number'));
-        
-         }
-} while (countNumbers > 0);
-smallest = Math.min(smallest, input);
+for (let i = 2; i < 10; i++) {
+    let x = Number(prompt(`Enter number ${i+1}`));
+    sum = sum + x;
+    if (x > biggest) {
+        biggest = x;
+    }
+    if (x < smallest) {
+        smallest = x;
+    }
+    console.log(`on step ${i} the biggest number is ${biggest}`);
+    console.log(`on step ${i} the smallest number is ${smallest}`);
+}
+
+average = sum / 10;
+
+console.log('The biggest number is', biggest);
 console.log('The smallest number is', smallest);
-
-
-
-
+console.log('The sum of numbers is', sum);
+console.log('The average number is', average);
