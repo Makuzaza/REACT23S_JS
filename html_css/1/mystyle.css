@@ -1,0 +1,16 @@
+body {
+    background-color: aquamarine;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+#my_id {
+    color: red;
+    text-align: center;
+}
+
+.my_class {
+    font-family: verdana, sans-serif;
+    font-size: 20px;
+}
+
+/* This is a comment */
