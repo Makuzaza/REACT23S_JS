@@ -1,0 +1,63 @@
+body {
+    background-color:#88e4e6; 
+    font-family: "Open Sans Condensed", sans-serif; 
+    color: #f7f7f7; 
+    margin: 20px;
+    line-height: 1,5;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(220, 226, 226);
+    text-shadow: 2px 2px 2px black;
+}
+
+h1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+p {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+div {
+    margin: 20px;
+    font-size: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    font-size: 30px;
+}
+
+input, button {
+    font-family: inherit;
+    width: 400px;
+    padding: 10px;
+  
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+
+}
+
+button {
+    background-color: rgb(78, 210, 76);
+    border: none;
+    padding: 5px 25px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 300px;
+    font-size: 30px;
+}
+
+#boxes {
+    background: url("https://source.unsplash.com/1600x900/?nature,water") no-repeat center center/cover;
+    height: 70vh;
+}

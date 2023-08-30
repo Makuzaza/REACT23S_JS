@@ -1,4 +1,7 @@
-// 1. let number = 1;
+// 1.  Make a program that prints all positive numbers that are odd and smaller
+//     than 100 starting from 1. (1 3 5 7 9 11...)
+
+// let number = 1;
 // while (number <= 100) {
 //     console.log(number);
 //     number = number + 2;
@@ -27,7 +30,10 @@
 //     }
 // }
 
-// 2. var s = "";
+// 2.  Make a program that prints all positive numbers that are smaller than
+//     100 and even, in this order: 2 98 4 96 6 94... Print result in one line.
+
+// var s = "";
 // for(var i = 2; i < 100; i += 2) {
 //   s += i + " ";
 // }
@@ -71,7 +77,12 @@
 // let distance;
 // let time;
 
-// 3. do {
+// 3.  Make a program that asks repeatedly from the user the distance (km) and
+//     time (h) and calculates average speed. The program ends when user gives
+//     0 for the distance. (After getting 0, the program does not ask anything
+//     from the user.)
+
+// do {
 //     distance = prompt("Please, write the distance in km");
     
 //     if (distance == 0) {
@@ -84,7 +95,10 @@
   
 // } while (true);
 
-// 4. let even = 0;
+// 4.  Make a program that asks 20 numbers from user. After that the program
+//     prints out how many of those numbers where even.
+
+// let even = 0;
 // for (let counter = 0; counter < 20; counter++) {
 //     let input = Number(prompt('enter a number'));
 //     if (input % 2 == 0) {
@@ -93,7 +107,10 @@
 // }
 // console.log('There was', even, 'even numbers');
 
-// 5. let input;
+// 5.  Make a program that asks numbers from the user, until user gives 0 and
+//     then program ends. In the end program prints out average of the numbers.
+
+// let input;
 // let sum = 0;
 // let count = 0;
 
@@ -106,7 +123,10 @@
 
 // console.log('There is sum ' + average);
 
-// 6. let input;
+// 6.  Make a program that asks 25 numbers form the user. In the end program
+//     printout average of the numbers.
+
+// let input;
 // let average = 0;
 // let sum = 0;
 
@@ -120,7 +140,12 @@
 
 // console.log('There was an average number', average);
 
-// 7. let input;
+// 7.  Make a program that ask first one number from the user. After that the
+//     program asks: "Do you want to continue giving numbers?(y/n)". If user
+//     answers y, the program continues to ask another number. If user answers
+//     n, program ends. In the end program prints out average of the numbers.
+
+// let input;
 // let average = 0;
 // let sum = 0;
 // let counter = 0; 
@@ -146,7 +171,10 @@
 // average = sum / counter;
 // console.log('The average of the numbers is', average);
 
-// 8. 
+// 8.  Make a program that asks first how many numbers user wants to give to
+//     the program. After that program asks those numbers. In the end program
+//     prints out the smallest number that user gave.
+
 // let countNumbers;
 // let number;
 // let smallest;
@@ -166,7 +194,9 @@
 // }
 // console.log('The smallest number is', smallest);
 
-// 9.
+// 9.  Make a program that asks ten numbers and in the end prints out two
+//     biggest numbers.
+
 // let biggest1;
 // let biggest2;
 
@@ -190,12 +220,13 @@
 // }
 // console.log('The biggest number are', biggest1, biggest2);
 
-// 10.
+// 10. Make a program that asks ten numbers. Program calculates and prints out
+//     sum and average, also prints out the smallest and biggest number.
+
 let number;
 let biggest;
 let smallest;
 let sum = 0;
-let summa = 0;
 let average;
 
 biggest = Number(prompt('Enter number 1'));

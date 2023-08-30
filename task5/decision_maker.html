@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 5</title>
+    <link rel="stylesheet" href="decision_maker.css" />
+    <script src="decision_maker.js" async></script>
+  </head>
+  <body id="boxes">
+    <main>
+      <h1>Decision making app</h1>
+      <p>Hello, I can give the best answer to your question:</p>
+      <div>
+        <label for="question">Question:</label>
+        <input
+          type="text"
+          id="question"
+          name="question"
+          placeholder="write your question"
+        />
+      </div>
+      <div><button onclick="decisionMaker()">Get the answer</button></div>
+
+      <p id="answers">Answer will be here</p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 4</title>
+    <link rel="stylesheet" href="project.css" />
+    <script src="project.js" async></script>
+  </head>
+  <body>
+    <main>
+      <h1>Gasoline price calculator</h1>
+      <p>
+        Make a program that asks the price of the gasoline and amount of money
+        from the user. The program calculates how much gasoline the user gets
+        with the money. The result is displayed to screen. If there are more
+        than 10 litres, then message of the screen: "good, you can escape now",
+        if less, it shows the message: "Ups, you have to stay here"
+      </p>
+      <div>
+        <label for="price">Price</label>
+        <input
+          type="number"
+          id="price"
+          name="price"
+          placeholder="Enter price"
+        />
+      </div>
+      <div>
+        <label for="money">Money</label>
+        <input
+          type="number"
+          id="money"
+          name="money"
+          placeholder="Enter money"
+        />
+      </div>
+      <div><button onclick="calcGasoline()">Calculate</button></div>
+
+      <p id="answer">Answer will be here</p>
+    </main>
+  </body>
+</html>
