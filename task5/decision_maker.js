@@ -1,12 +1,16 @@
+// connect to html file
 const decisionMaker = () => {
+    // define question and answer
     const question = document.querySelector('#question').value;
     const answer = document.querySelector('#answers');
     
+    // define the text that should be present in the response
     let text = '';
 
     if (question !== '') { 
+        // make random numbers
         const randomNumbers = Math.floor(Math.random() * 10) + 1;
-        
+        // switch that selects random numbers associated with text
         switch (randomNumbers) {
             case 1:
                 text = 'The stars say yes, go for it!';
@@ -39,7 +43,7 @@ const decisionMaker = () => {
                 text = "Not the right time, patience will bring better results";
                 break;
         }
-
+// showing text depending on numbers
         answer.textContent = `Answer: ${text}`;
     } else {
         answer.textContent = 'Write your question correctly';
