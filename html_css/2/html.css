@@ -36,12 +36,12 @@ nav ul {
 
 header li {
     display: inline-block;
-    color: white;
+    color: #333;
 }
 
 ul li a {
     padding: 20px;
-    color: white;
+    color: #333;
     text-decoration: none;
     display: block;
 }
