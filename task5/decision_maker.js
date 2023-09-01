@@ -44,7 +44,7 @@ const decisionMaker = () => {
                 break;
         }
 // showing text depending on numbers
-        answer.textContent = `Answer: ${text}`;
+        answer.textContent = `Question ${question}; Answer: ${text}`;
     } else {
         answer.textContent = 'Write your question correctly';
     }
