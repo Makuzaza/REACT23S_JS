@@ -1,6 +1,6 @@
 body {
     background-color: rgb(255, 245, 241);
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #333;
 }
 
@@ -31,12 +31,14 @@ h2 {
 .div1 {
     padding: 50px 40px 100px 40px;
     margin: 50px 0px 50px 0px;
+    font-size: 13px;
 }
 
 .div2 {
     background-color: rgb(235, 223, 208);
     padding: 50px 40px 100px 40px;
     margin: 50px 0px 50px 0px;
+    font-size: 13px;
 }
 
 #first {
@@ -92,11 +94,106 @@ li:hover {
     background-color: rgb(231, 180, 206);
 }
 
-.footer {
-    background-color: rgb(24, 24, 23);
-    padding: 20px;
-    text-align: center;
+.form {
+    background-color: rgb(18, 18, 18);
     font-size: 13px;
     color: #b5b2b2;
+    padding: 10px;
 }
+
+#container {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#contact {
+    color: white;
+    margin: 30px;
+}
+
+.input-form {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.label {
+    text-align: left;
+}
+
+td {
+    vertical-align: bottom;
+    padding-bottom: 20px;
+}
+
+.button{
+    text-align: center;
+}
+
+footer {
+    font-size: 10px;
+    color: rgb(139, 138, 138);
+    text-align: center;
+    margin: 10px;
+}
+
+.form button {
+    width: 30%;
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+}
+
+#container button:hover {
+    background: chocolate;
+}
+
+::placeholder {
+    color: rgb(171, 172, 172);
+    font-size: 11px;
+}
+
+/* .form-group label {
+    display: inline-block;
+    font-size: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.form-group input {
+    width: 30%;
+    background: white;
+    color: rgb(19, 16, 16);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form-wrap button {
+    width: 30%;
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group textarea {
+    border-radius: 5px;
+
+} */
+
 

@@ -1,0 +1,95 @@
+#answers {
+    padding: 30px;
+}
+
+* {
+    box-sizing: border-box;
+  
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: "Open Sans", sans-serif; 
+    color: #f7f7f7; 
+    margin: 5px;
+    line-height: 1,5;
+    border-style: solid;
+    border-color: rgb(220, 226, 226);
+    text-shadow: 2px 2px 2px black;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+h1 span { 
+    background-color: rgb(237, 236, 126); 
+    padding: 10px;
+}
+
+p span {
+    background-color: rgb(195, 235, 150);
+    padding: 1px 5px 1px 5px; 
+}
+
+label span {
+    background-color: rgb(195, 235, 150);
+    padding: 1px 5px 1px 5px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+label {
+    text-align: center;
+    width: 150px;
+    font-size: 30px;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4ed24c;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    font-size: 25px;
+}
+
+#delivery {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.button {
+    text-align: center;
+}
+
+#boxes {
+    background: url("https://images.unsplash.com/photo-1584782930656-e2bc1e803fc7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8cGl6emF8fHx8fHwxNjkzODE2Njc0&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600") no-repeat center center/cover;
+    height: 100vh;
+    margin-bottom: 10px;
+}
