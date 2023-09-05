@@ -55,7 +55,7 @@ if (size1.checked) {
     console.log(size)
 }
 
-if (delivery_way == "delivery_home") {
+if (delivery_way == "delivery home") {
     delivery = 5;
     console.log(delivery);
 } else {
