@@ -50,19 +50,19 @@
           <input
             type="checkbox"
             id="current1"
-            value="Hypertension"
+            value=" Hypertension"
             name="current"
           />Hypertension<br />
           <input
             type="checkbox"
             id="current2"
-            value="High Blood Sugar"
+            value=" High Blood Sugar"
             name="current"
           />High Blood Sugar<br />
           <input
             type="checkbox"
             id="current3"
-            value="Overweight"
+            value=" Overweight"
             name="current"
           />Overweight<br />
         </div>
@@ -71,49 +71,51 @@
           <label for="habits">4. Habits:</label>
           <br />
           Specify your habits. You can select one or more of the following
-          options<br />
+          options
+          <br />
+          <br />
           <label for="good_habits">Good Health Habits:</label><br />
           <input
             type="checkbox"
             id="habit1"
-            value="Physical exercises"
-            name="habits"
+            value=" Regular Exercise"
+            name="good_habits"
           />Regular Exercise: Engaging in physical activity and exercise on a
           regular basis.<br />
           <input
             type="checkbox"
             id="habit2"
-            value="Healthy Diet"
-            name="habits"
+            value=" Healthy Diet"
+            name="good_habits"
           />Healthy Diet: Maintaining a balanced and nutritious diet.
           <br />
           <input
             type="checkbox"
             id="habit3"
-            value="Good sleeping"
-            name="habits"
+            value=" Adequate Sleep"
+            name="good_habits"
           />Adequate Sleep: Ensuring you get enough restful sleep each night.
           <br />
           <input
             type="checkbox"
             id="habit4"
-            value="Stress Management"
-            name="habits"
+            value=" Stress Management"
+            name="good_habits"
           />Stress Management: Practicing stress-reduction techniques such as
           meditation or yoga.<br />
           <input
             type="checkbox"
             id="habit5"
-            value="Moderate alcohol consumption"
-            name="habits"
+            value=" Moderate alcohol consumption"
+            name="good_habits"
           />Moderate Alcohol Consumption: Consuming alcohol in moderation, if at
           all.
           <br />
           <input
             type="checkbox"
             id="habit6"
-            value="Non-Smoking"
-            name="habits"
+            value=" Non-Smoking"
+            name="good_habits"
           />Non-Smoking: Not smoking or using tobacco products.
         </div>
         <div class="column">
@@ -121,46 +123,46 @@
           <input
             type="checkbox"
             id="habit7"
-            value="Smoking"
-            name="habits"
+            value=" Smoking"
+            name="bad_habits"
           />Smoking: Regularly smoking cigarettes or using tobacco products.<br />
           <input
             type="checkbox"
             id="habit8"
-            value="Excessive Alcohol Consumption"
-            name="habits"
+            value=" Excessive Alcohol Consumption"
+            name="bad_habits"
           />Excessive Alcohol Consumption: Consuming alcohol in large quantities
           or frequently.
           <br />
           <input
             type="checkbox"
             id="habit9"
-            value="Lack of Exercise"
-            name="habits"
+            value=" Lack of Exercise"
+            name="bad_habits"
           />Lack of Exercise: Leading a sedentary lifestyle with little to no
           physical activity.
           <br />
           <input
             type="checkbox"
             id="habit10"
-            value="Poor Diet"
-            name="habits"
+            value=" Poor Diet"
+            name="bad_habits"
           />Poor Diet: Consistently consuming unhealthy foods high in sugar,
           fats, and processed ingredients.
           <br />
           <input
             type="checkbox"
             id="habit11"
-            value="Inadequate Sleep"
-            name="habits"
+            value=" Inadequate Sleep"
+            name="bad_habits"
           />Inadequate Sleep: Not getting enough sleep or having irregular sleep
           patterns.
           <br />
           <input
             type="checkbox"
             id="habit12"
-            value="Drug Use"
-            name="habits"
+            value=" Drug Use"
+            name="bad_habits"
           />Drug Use: Engaging in the use of illegal drugs or misusing
           prescription medications.
           <br />
@@ -169,8 +171,9 @@
 
       <div class="button">
         <button onclick="insuranceRisk()">Calculate the riskscore</button>
+
+        <p id="answers">Answer will be here</p>
       </div>
-      <p id="answers">Answer will be here</p>
     </main>
   </body>
 </html>

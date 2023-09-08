@@ -1,5 +1,5 @@
 #answers {
-    padding: 20px;
+    padding: 0px 0px 50px 0px;
 }
 
 div {
@@ -7,41 +7,40 @@ div {
 }
 
 .column {
-
-    padding: 0px;
+    padding: 15px;
 }
 
 
 body {
-    font-family: "Open Sans", sans-serif; 
+    font-family: "Oswald", sans-serif; 
     color: #f7f7f7; 
-    margin: 5px;
+    margin: 10px;
     line-height: 1,5;
-    border-style: solid;
-    border-color: rgb(220, 226, 226);
     text-shadow: 2px 2px 2px black;
+    padding: 10px;
 }
 
 h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-align: center;
     color: aliceblue;
 }
 
 h1 span { 
-    background-color: rgb(237, 236, 126); 
+    background-color: rgb(84, 154, 127); 
     padding: 10px;
 }
 
 p span {
-    background-color: rgb(195, 235, 150);
+    background-color: rgb(34, 123, 135);
     padding: 1px 5px 1px 5px; 
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
+    margin: 30px;
 }
 .name {
     padding: 10px;
@@ -51,7 +50,7 @@ p {
 label {
     text-align: center;
     width: 150px;
-    font-size: 30px;
+    font-size: 25px;
     margin: 20px;
 }
 
@@ -59,11 +58,11 @@ input {
     width: 20px;
     border-radius: 5px;
     padding: 10px;
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 40px;
 }
 
 button {
-    background-color: #4ed24c;
+    background-color: #c73a3a;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     padding: 10px;
     color: white;
@@ -73,17 +72,12 @@ button {
     font-size: 25px;
 }
 
-#delivery {
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-}
 .button {
     text-align: center;
 }
 
 #boxes {
     background-image: linear-gradient(to right, rgb(24, 105, 226), rgb(176, 241, 243));
-    height: 100vh;
-    margin-bottom: 10px;
+    height: 150vh;
+
 }
