@@ -1,0 +1,89 @@
+#answers {
+    padding: 20px;
+}
+
+div {
+    box-sizing: content-box;
+}
+
+.column {
+
+    padding: 0px;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif; 
+    color: #f7f7f7; 
+    margin: 5px;
+    line-height: 1,5;
+    border-style: solid;
+    border-color: rgb(220, 226, 226);
+    text-shadow: 2px 2px 2px black;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+h1 span { 
+    background-color: rgb(237, 236, 126); 
+    padding: 10px;
+}
+
+p span {
+    background-color: rgb(195, 235, 150);
+    padding: 1px 5px 1px 5px; 
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.name {
+    padding: 10px;
+    width: 200px;
+}
+
+label {
+    text-align: center;
+    width: 150px;
+    font-size: 30px;
+    margin: 20px;
+}
+
+input {
+    width: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 0px 0px 30px;
+}
+
+button {
+    background-color: #4ed24c;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    font-size: 25px;
+}
+
+#delivery {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.button {
+    text-align: center;
+}
+
+#boxes {
+    background-image: linear-gradient(to right, rgb(24, 105, 226), rgb(176, 241, 243));
+    height: 100vh;
+    margin-bottom: 10px;
+}

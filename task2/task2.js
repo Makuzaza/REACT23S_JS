@@ -1,3 +1,0 @@
-this_is_ok
-thisIsOk
-ThisIOkAlso
