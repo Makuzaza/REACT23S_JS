@@ -25,7 +25,7 @@ const insuranceRisk = () => {
         return;
     }
     if (age != Number(age)) {
-        answer.innerHTML = 'Please write numbers in "Your age';
+        answer.innerHTML = 'Please write numbers in "Your age"';
         return;
     }
 console.log(name);
