@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>Insurance</title>
     <link rel="stylesheet" href="insurance.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa"
+      rel="stylesheet"
+    />
     <script src="insurance.js" async></script>
   </head>
   <body id="boxes">
@@ -30,22 +34,21 @@
           <br /><br />
           <label for="age">2. Your age:</label><br />
           <input
-            type="radio"
-            id="age1"
-            value="under 18"
+            class="age"
+            type="text"
             name="age"
-            checked
-          />under 18<br />
-          <input type="radio" id="age2" value="18-25" name="age" />18-25<br />
+            id="age"
+            placeholder="enter your age"
+          />
+          <!-- <input type="radio" id="age2" value="18-25" name="age" />18-25<br />
           <input type="radio" id="age3" value="26-35" name="age" />26-35<br />
           <input type="radio" id="age4" value="36-45" name="age" />36-45<br />
           <input type="radio" id="age5" value="46-55" name="age" />46-55<br />
           <input type="radio" id="age6" value="56-65" name="age" />56-65<br />
-          <input type="radio" id="age7" value="66+" name="age" />66+
-        </div>
-        <div class="column">
+          <input type="radio" id="age7" value="66+" name="age" />66+<br /> -->
+          <br /><br />
           <label for="current">3. Current Health:</label><br />
-          Your current health status. You can select one or more of the
+          Your current health status. <br />You can select one or more of the
           following options<br />
           <input
             type="checkbox"
@@ -64,7 +67,7 @@
             id="current3"
             value=" Overweight"
             name="current"
-          />Overweight<br />
+          />Overweight<br /><br />
         </div>
 
         <div class="column">
@@ -117,8 +120,9 @@
             value=" Non-Smoking"
             name="good_habits"
           />Non-Smoking: Not smoking or using tobacco products.
-        </div>
-        <div class="column">
+
+          <br /><br />
+
           <label for="bad_habits">Unhealthy Habits:</label><br />
           <input
             type="checkbox"
@@ -164,14 +168,11 @@
             value=" Drug Use"
             name="bad_habits"
           />Drug Use: Engaging in the use of illegal drugs or misusing
-          prescription medications.
-          <br />
+          prescription medications. <br />
         </div>
       </div>
-
       <div class="button">
         <button onclick="insuranceRisk()">Calculate the riskscore</button>
-
         <p id="answers">Answer will be here</p>
       </div>
     </main>

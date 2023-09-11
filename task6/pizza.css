@@ -1,15 +1,36 @@
 #answers {
     padding: 20px;
+    color: #333;
 }
 
 div {
-    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+#name {
+    width: 400px;
+    background-color: #ecf3cb;
+    text-shadow: none;
+    color: #333;
+    padding: 10px;
+    margin: 0px 70px 0px 30px;
+}
+#nameclient {
+    width: 250px;
+}
+
+#toppings {
+    background-color: #ecf3cb;
+    color: #333;
+    padding: 20px;
+    width: 400px;
+    margin: 0px 0px 0px 30px;
 }
 
 .column {
     float: left;
     width: 50%;
-    padding: 0px;
+    padding: 10px;
 }
 
 .row:after {
@@ -19,19 +40,19 @@ div {
 }
 
 body {
-    font-family: "Open Sans", sans-serif; 
-    color: #f7f7f7; 
+    font-family: "Oswald", sans-serif; 
+    color: #333; 
     margin: 5px;
-    line-height: 1,5;
+    line-height: 1,8;
     border-style: solid;
     border-color: rgb(220, 226, 226);
-    text-shadow: 2px 2px 2px black;
+   
 }
 
 h1 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-align: center;
-    color: aliceblue;
+    color: #333;
 }
 
 h1 span { 
@@ -51,7 +72,7 @@ p {
 }
 .name {
     padding: 10px;
-    width: 200px;
+    width: 100px;
 }
 
 label {
@@ -62,7 +83,7 @@ label {
 }
 
 input {
-    width: 20px;
+    width: 30px;
     border-radius: 5px;
     padding: 10px;
     margin: 0px 0px 0px 30px;
@@ -70,7 +91,6 @@ input {
 
 button {
     background-color: #4ed24c;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     padding: 10px;
     color: white;
     border-radius: 20px;
@@ -80,9 +100,10 @@ button {
 }
 
 #delivery {
-    width: 200px;
+    width: 280px;
     padding: 10px;
     border-radius: 5px;
+    margin: 0px 0px 0px 30px;
 }
 .button {
     text-align: center;

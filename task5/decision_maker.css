@@ -1,6 +1,6 @@
 body {
     background-color:#88e4e6; 
-    font-family: "Open Sans Condensed", sans-serif; 
+    font-family: "Comfortaa", sans-serif; 
     color: #f7f7f7; 
     margin: 20px;
     line-height: 1,5;
@@ -11,13 +11,13 @@ body {
 }
 
 h1 {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     text-align: center;
     color: aliceblue;
 }
 
 p {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     text-align: center;
     font-size: 30px;
 }

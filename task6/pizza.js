@@ -1,11 +1,11 @@
-// connect to html file
 let size = 0;
 let delivery;
 let toppings;
 
 const pizzaPrice = () => {
-    let toppings = '';
-    // define question and answer
+
+    // let toppings = '';
+
     const size1 = document.querySelector('#size1');
     const size2 = document.querySelector('#size2');
     const size3 = document.querySelector('#size3');
@@ -29,7 +29,7 @@ const pizzaPrice = () => {
 
     const delivery_way = document.querySelector('#delivery').value;
 
-    const name = document.querySelector('#name').value;
+    const name = document.querySelector('#nameclient').value;
 
     const answer = document.querySelector('#answers');
 
@@ -165,3 +165,19 @@ if (toppingCount > 4) {
         answer.textContent = 'Please, choose options';
     }
 }
+
+const sizeInputs = document.querySelectorAll('input[name="size"]');
+for (const i of sizeInputs) {
+    i.addEventListener('click', pizzaPrice);
+}
+
+const toppingCheckboxes = document.querySelectorAll('input[name="toppings"]');
+for (const i of toppingCheckboxes) {
+    i.addEventListener('click', pizzaPrice);
+};
+
+const deliverySelect = document.querySelector('#delivery');
+deliverySelect.addEventListener('change', pizzaPrice);
+
+const nameSelect = document.querySelector('#nameclient');
+nameSelect.addEventListener('change', pizzaPrice);
