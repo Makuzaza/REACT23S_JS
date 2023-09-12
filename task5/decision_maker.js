@@ -49,3 +49,6 @@ const decisionMaker = () => {
         answer.textContent = 'Write your question correctly';
     }
 }
+
+const decisionSelect = document.querySelector('#question');
+decisionSelect.addEventListener('change', decisionMaker);
