@@ -33,14 +33,6 @@ const pizzaPrice = () => {
 
     const answer = document.querySelector('#answers');
 
-// console.log(name)
-// console.log(size1)
-// console.log(size2)
-// console.log(size3)
-// console.log(size4)
-// console.log(topping1)
-// console.log(delivery)
-
 if (size1.checked) {
     size = Number(size1.value);
     console.log(size);
@@ -64,7 +56,6 @@ if (delivery_way == "delivery home") {
 }
 
 let toppingCount = 0;
-let addPrice = 0;
 
 let checkboxes = document.querySelectorAll('input[name="toppings"]');
 let values = [];
@@ -74,6 +65,8 @@ for (let i = 0; i < checkboxes.length; i++) {
         toppingCount = toppingCount + 1;
     }
 }
+
+// console.log(toppingCount)
 
 // if (topping1.checked) {
 //     toppingCount = toppingCount + 1;
@@ -150,7 +143,6 @@ for (let i = 0; i < checkboxes.length; i++) {
 //     toppings = toppings + ', ' + topping15.value;
 //     console.log(toppings);
 // }
-console.log(toppingCount)
  
 let sum = 0;
 toppingCount = Number(toppingCount);

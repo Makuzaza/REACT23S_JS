@@ -1,25 +1,58 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    background-color: rgb(255, 245, 241);
     font-family: "Open Sans", sans-serif;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.logo {
+    margin-right: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 10px; 
+}
+
+ul {
+    flex: 5;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+a {
+    text-align: center;
     color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 #box {
     background: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5MzQ2ODA3Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600") no-repeat center center/cover;
     height: 70vh;
-}
-
-h1 {
-    line-height: 10px;
-    margin-bottom: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h2 {
-  padding: 0px;
-  text-align: left;
-  padding: 10px 0px 10px 0px;
-}
 
 .h2 {
     padding: 0px;
@@ -43,12 +76,13 @@ h2 {
 
 #first {
     font-size: 25px;
-    padding: 50px 0px 10px 0px;
+    display: flex;
 }
 
 #second {
     font-size: 50px;
-    padding: 130px 0px 0px 0px;
+    text-align: center;
+    margin-top: 170px;
 }
 
 .img1, .img3 {
@@ -67,28 +101,6 @@ h2 {
     content: "";
     clear: both;
     display: table;
-}
-
-header {
-    background: #988e8e;
-    text-align: right;
-}
-nav ul {
-    list-style-type: none;
-    text-align: center;
-
-}
-
-header li {
-
-    display: inline-block;
-}
-
-ul li a {
-    padding: 20px 10px 20px 10px;
-    color: #333;
-    text-decoration: none;
-    display: block;
 }
 
 li:hover {
@@ -112,6 +124,7 @@ li:hover {
 #contact {
     color: white;
     margin: 30px;
+    text-align: center;
 }
 
 .input-form {
@@ -164,5 +177,4 @@ footer {
 
 .form-group textarea {
     border-radius: 5px;
-
 } 
