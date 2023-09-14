@@ -1,62 +1,54 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
 }
 
+header {
+
+    color: #333;
+    padding: 1rem;
+}
+
 .header-content {
     display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    font-size: 12px;
 }
 
 .logo {
-    margin-right: 3rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 10px; 
+    flex: 5;
+    padding: 1.5rem;
 }
 
 ul {
-    flex: 5;
+    flex: 1;
     display: flex;
+    flex-wrap: wrap;  
     list-style-type: none;
+    padding: 1.5rem;
     align-items: center;
 }
 
 a {
-    text-align: center;
     color: #333;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 1rem;
+    font-size: 10px;
 }
 
 #box {
     background: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5MzQ2ODA3Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600") no-repeat center center/cover;
     height: 70vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
-
 
 .h2 {
     padding: 0px;
-    text-align: left;
     background-color: rgb(235, 223, 208);
     padding: 10px 0px 10px 0px;
   }
@@ -132,11 +124,16 @@ li:hover {
     border-radius: 5px;
 }
 
-.label {
-    text-align: left;
+#label {
+    width: 20%;
+}
+
+#input {
+    width: 80%;
 }
 
 td {
+
     vertical-align: top;
     padding-bottom: 20px;
 }
@@ -153,7 +150,7 @@ footer {
 }
 
 .form button {
-    width: 30%;
+    width: 10rem;
     background: coral;
     color: white;
     padding: 10px;

@@ -1,7 +1,3 @@
-let scores = [40, 100, 1, 5, 25, 10]
-scores.sort((a,b) => 0.5 - Math.random());
-
-
 // Task 1
 // Create an array called "names" and set it's items to be
 // David, Ann, Leia, Mathew and Mark.
@@ -51,19 +47,60 @@ document.getElementById('task8').textContent = names;
 // Sort the numbers from largest to smallest. Print them.
 
 const numbers = [1, 7, 45, 32, 27, 86]
-document.getElementById('task9').textContent = numbers.sort(( a,b  ) => a - b);
+document.getElementById('task9').textContent = numbers.sort((a,b) => a - b);
 
 // Task 10
 // Randomize the numbers array.
 
-document.getElementById('task10').textContent = numbers.sort(( a,b  ) => 0.5 - Math.random());
+document.getElementById('task10').textContent = numbers.sort((a,b) => 0.5 - Math.random());
 
 // Task 11
 // Find the largest and smallest value from the numbers array using sort() function.
 // Print those values.
 
-numbers.sort(( a,b  ) => a - b);
+numbers.sort((a,b) => a - b);
 document.getElementById('task11').textContent = numbers[0];
 
-numbers.sort(( a,b  ) => a - b);
+numbers.sort((a,b) => a - b);
 document.getElementById('task12').textContent = numbers.pop();
+
+// let scores = [40, 100, 1, 5, 25, 10]
+// scores.sort((a,b) => 0.5 - Math.random());
+
+// const players = [
+//     {
+//         name: 'Joe',
+//         team: 'Hoks',
+//         score: 45
+//     },
+//     {
+//         name: 'Mike',
+//         team: 'Hoks',
+//         score: 50
+//     },
+//     {
+//         name: 'Lisa',
+//         team: 'Luks',
+//         score: 30
+//     },
+//     {
+//         name: 'Huk',
+//         team: 'Hoks',
+//         score: 43
+//     },
+//     {
+//         name: 'Ann',
+//         team: 'Luks',
+//         score: 55
+//     }
+// ];
+
+// document.querySelector('#task5').textContent = players;
+// players.sort((a,b) => {
+//     if (a.score < b.score) {
+//         return -1;
+//     } else {
+//         return 1;
+//     }
+// });
+// console.log(players)
