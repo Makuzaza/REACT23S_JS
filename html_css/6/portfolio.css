@@ -28,16 +28,30 @@ ul {
     display: flex;
     flex-wrap: wrap;  
     list-style-type: none;
-    padding: 1.5rem;
+    padding: 1rem;
     align-items: center;
 }
 
-a {
+nav a {
     color: #333;
     text-decoration: none;
     text-transform: uppercase;
     margin: 1rem;
-    font-size: 10px;
+    font-size: 13px;
+}
+
+li:hover {
+    background-color: rgb(231, 180, 206);
+}
+
+#first {
+    font-size: 25px;
+}
+
+#second {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 170px;
 }
 
 #box {
@@ -47,16 +61,58 @@ a {
     padding: 0px;
 }
 
-.h2 {
-    padding: 0px;
-    background-color: rgb(235, 223, 208);
-    padding: 10px 0px 10px 0px;
-  }
-
 .div1 {
     padding: 50px 40px 100px 40px;
     margin: 50px 0px 50px 0px;
     font-size: 13px;
+}
+
+h2 {
+    padding: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.h2 {
+    padding: 0px;
+    background-color: rgb(235, 223, 208);
+    padding: 10px 0px 10px 0px;
+}
+
+section {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    color: rgb(48, 28, 28);
+    border-style: double;
+    border-color: #9d9b9b;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.project {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+    text-align: left;
+}
+
+.link a {
+    color: chocolate;
+    text-transform: none;
+    text-decoration: none;
 }
 
 .div2 {
@@ -66,15 +122,9 @@ a {
     font-size: 13px;
 }
 
-#first {
-    font-size: 25px;
-    display: flex;
-}
-
-#second {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 170px;
+img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .img1, .img3 {
@@ -85,7 +135,7 @@ a {
   
 .img2 {
     float: right;
-    width: 300px;
+    width: 250px;
     padding: 0px 0px 30px 30px;
   }
 
@@ -93,10 +143,6 @@ a {
     content: "";
     clear: both;
     display: table;
-}
-
-li:hover {
-    background-color: rgb(231, 180, 206);
 }
 
 .form {
@@ -133,7 +179,6 @@ li:hover {
 }
 
 td {
-
     vertical-align: top;
     padding-bottom: 20px;
 }
@@ -170,7 +215,6 @@ footer {
     color: rgb(171, 172, 172);
     font-size: 11px;
 }
-
 
 .form-group textarea {
     border-radius: 5px;
