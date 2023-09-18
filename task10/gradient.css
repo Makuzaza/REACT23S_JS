@@ -2,5 +2,32 @@ body {
     background-image: linear-gradient(to right, rgb(224, 64, 91), rgb(56, 45, 217));
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+* {
+    margin: 0;
+}
+
+form {
+    width: 30%;
+    background-color: aliceblue;
+    height: 100vh;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.direction {
+    background-color: rgb(100, 100, 185);
+    margin: 10px;
+    padding: 10px;
+    width: 3rem;
+    height: 3rem;
 }
