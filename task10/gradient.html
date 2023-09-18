@@ -16,11 +16,13 @@
     <script src="gradient.js" async></script>
   </head>
   <body>
-    <form>
+    <form class="container">
       <h1>Linear gradient generator</h1>
       <h2>Colors</h2>
-      <input type="color" name="color1" value="#FF0000" id="color1" />
-      <input type="color" name="color2" value="#74009e" id="color2" />
+      <div class="colors">
+        <input type="color" name="color1" value="#FF0000" id="color1" />
+        <input type="color" name="color2" value="#74009e" id="color2" />
+      </div>
       <h2>Directions</h2>
       <div class="directions">
         <div class="direction">
@@ -59,14 +61,14 @@
         </div>
         <div class="direction">
           <input type="radio" name="direction" value="to right" id="to_right" />
-          <label for="to right"
+          <label for="to_right"
             ><span class="material-symbols-outlined">east</span></label
           >
         </div>
         <div class="empty"></div>
         <div class="direction">
           <input type="radio" name="direction" value="to left" id="to_left" />
-          <label for="to left"
+          <label for="to_left"
             ><span class="material-symbols-outlined">west</span></label
           >
         </div>
@@ -84,7 +86,7 @@
         </div>
         <div class="direction">
           <input type="radio" name="direction" value="to top" id="to_top" />
-          <label for="to top"
+          <label for="to_top"
             ><span class="material-symbols-outlined">north</span></label
           >
         </div>
