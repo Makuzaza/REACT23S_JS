@@ -2,32 +2,64 @@ body {
     background-image: linear-gradient(to right, rgb(224, 64, 91), rgb(56, 45, 217));
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: auto;
 }
 
 * {
     margin: 0;
 }
 
+h1, h2 {
+    padding: 20px;
+
+}
+
 form {
-    width: 30%;
+    width: 300px;
     background-color: aliceblue;
-    height: 100vh;
+    height: 120vh;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
 }
 
-.directions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.direction {
-    background-color: rgb(100, 100, 185);
+.empty {
+    background-color: aliceblue;
     margin: 10px;
     padding: 10px;
     width: 3rem;
     height: 3rem;
 }
+
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.direction {
+    display: block;
+    background-color: rgb(152, 152, 157);
+    margin: 10px;
+    padding: 10px;
+    width: 3rem;
+    height: 3rem;
+}
+
+#color1, #color2 {
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+} 
+
+
+input[type="radio"] { 
+    display:none;
+}
+
+label {
+    color: #333;
+align-items: center;
+}
+
