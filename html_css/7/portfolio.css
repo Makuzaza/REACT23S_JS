@@ -1,0 +1,279 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+
+    color: #333;
+    padding: 1rem;
+
+}
+
+#adbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Default z-index is 0, so 1 is closer to the reader and ad covers the page content. */
+    width: 100%;
+    background-color: rgb(238, 193, 200);
+    padding: 10px;
+    position: fixed;
+}
+
+.header-content {
+    display: flex;
+}
+
+.logo {
+    flex: 5;
+    padding: 1.5rem;
+}
+
+ul {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;  
+    list-style-type: none;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+ul li a {
+    padding: 1rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+li:hover {
+    background-color: rgb(175, 205, 230);
+}
+
+#first {
+    font-size: 25px;
+}
+
+#second {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 200px;
+    align-items: center;
+}
+
+#box {
+   align-items: center;
+    background: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTY5MzQ2ODA3Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600") no-repeat center center/cover;
+    height: 70vh;
+    margin-top: 70px;
+    padding: 0px;
+}
+
+h2 {
+    padding: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.h2 {
+    padding: 0px;
+    background-color: rgb(235, 223, 208);
+    padding: 10px 0px 10px 0px;
+}
+
+section {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    color: rgb(48, 28, 28);
+    border-style: double;
+    border-color: #9d9b9b;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.box2 {
+    width: 150px;
+    height: 150px;
+    color: #333;
+    border-style: double;
+    border-color: #9d9b9b;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+}
+
+#html5-skill, #css3-skill, 
+#teaching-skill, #couching-skill {
+    width: 100px;
+}
+
+#html5-skill::-webkit-meter-bar, #css3-skill::-webkit-meter-bar, #teaching-skill::-webkit-meter-bar, #couching-skill::-webkit-meter-bar {
+    border-radius: 5px;
+    height: 20px;
+ 
+}
+/* But in order to change the bar color, you need to target the values. */
+#html5-skill::-webkit-meter-optimum-value, 
+#css3-skill::-webkit-meter-optimum-value, 
+#teaching-skill::-webkit-meter-optimum-value, 
+#couching-skill::-webkit-meter-optimum-value {
+    background-color: orange;
+}
+
+.italic {
+    font-style: italic;
+    text-align: left;
+}
+
+.link a {
+    color: chocolate;
+    text-transform: none;
+    text-decoration: none;
+}
+
+article {
+    padding: 40px;
+    font-size: 13px;
+}
+
+article:nth-child(even) {
+    background-color: rgb(220, 220, 220);
+}
+
+.box2:nth-child(even) {
+    background-color: rgb(229, 227, 227);
+}
+
+.box2:nth-child(odd) {
+    background-color: rgb(200, 196, 196);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+  
+.img2 {
+    width: 250px;
+    padding: 0px 0px 30px 30px;
+  }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.form {
+    background-color: rgb(18, 18, 18);
+    font-size: 13px;
+    color: #b5b2b2;
+    padding: 10px;
+}
+
+#container {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#contact {
+    color: white;
+    margin: 30px;
+    text-align: center;
+}
+
+.input-form {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#label {
+    width: 20%;
+}
+
+#input {
+    width: 80%;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+
+.button{
+    text-align: center;
+}
+
+footer {
+    font-size: 10px;
+    color: rgb(139, 138, 138);
+    text-align: center;
+    margin: 10px;
+}
+
+.form button {
+    width: 10rem;
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+}
+
+#container button:hover {
+    background: chocolate;
+}
+
+::placeholder {
+    color: rgb(171, 172, 172);
+    font-size: 11px;
+}
+
+.form-group textarea {
+    border-radius: 5px;
+} 
+
+@media (max-width: 450px) {
+    .about {
+        flex-direction: column-reverse;
+    }}

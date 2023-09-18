@@ -18,7 +18,7 @@ document.getElementById('task3').textContent = names.length;
 // Task 4
 // Print the last item of the array
 
-document.getElementById('task4').textContent = names[4];
+document.getElementById('task4').textContent = names[names.length - 1];
 
 // Task 5
 // Add Peter as the last item to the array and print the whole array
@@ -62,7 +62,7 @@ numbers.sort((a,b) => a - b);
 document.getElementById('task11').textContent = numbers[0];
 
 numbers.sort((a,b) => a - b);
-document.getElementById('task12').textContent = numbers.pop();
+document.getElementById('task12').textContent = numbers[numbers.length - 1];
 
 // let scores = [40, 100, 1, 5, 25, 10]
 // scores.sort((a,b) => 0.5 - Math.random());

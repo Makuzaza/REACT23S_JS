@@ -1,0 +1,110 @@
+/* box-sizing: border-box means that "width" actually means width (likewise with height).
+Default behavior is that real width is width + padding + border. Always use when doing responsive. */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* All the colored boxes had little white borders and they all had pm class. */
+.pm {
+	border: 2px solid white;
+}
+
+/* The header consists of site title and nav element side by side. Display: flex
+is always set to the CONTAINER, not to the elements that are side by side.
+If you have to specify height, use min-height (or max-height) rather than height
+or there will be problems when there's more content. */
+header {
+	display: flex;
+	min-height: 4rem;
+}
+
+/* Flex layout tries to be as compact as possible. By splitting 100% of width (or height),
+you can make it full width. */
+.site-title {
+	background-color: yellow;
+	width: 50%;
+}
+
+header nav {
+	width: 50%;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	height: 100%;
+}
+
+/* Pay attention that the 100% to be divided is of the width of the nearest container (in this case ul).
+Directly trying to give each list item 1/6 of the header width does not work. */
+header nav li {
+	background-color: pink;
+	width: calc(100% / 3); /* This calculates for you what is 100% divided by three exact. Must easier than 33.33333333%. */
+}
+
+/* There's a lot of boxes inside boxes here. Always look for one vertical or horizontal line to split on. */
+main {
+	display: flex;
+}
+
+main section {
+	width: 75%;
+}
+
+/* Aside contains three boxes vertically. You could use flexbox with flex-direction: column,
+but you don't need to. The default behavior in web pages is aligning from top to bottom. */
+main aside {
+	width: 25%;
+}
+
+/* Just a little min-height here too to keep the boxes from collapsing from the lack of content. */
+.post-title {
+	background-color: lightblue;
+	min-height: 4rem;
+}
+
+.section-post-container {
+	display: flex;
+	min-height: 15rem;
+}
+
+.post-meta {
+	background-color: lightgreen;
+	width: 25%;
+}
+
+.main-content-container {
+	width: 75%;
+}
+
+.main-content {
+	background-color: lightgray;
+	height: calc(100% / 3);
+}
+
+.main-content-img {
+	background-color: yellow;
+	height: calc(2 * 100% / 3);
+}
+
+.side-bar {
+	background-color: orange;
+	height: calc(100% / 3);
+}
+
+.ads {
+	background-color: green;
+	height: calc(100% / 3);
+}
+
+.other-stuff {
+	background-color: magenta;
+	height: calc(100% / 3);
+}
+
+footer {
+	background-color: brown;
+	min-height: 4rem;
+}

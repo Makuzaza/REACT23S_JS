@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        /* Always put CSS styles in separate file. This is just a little test. */
+
+        /* Position: absolute puts the element to location specified by top / left / bottom / right values.
+        Position: fixed makes it follow the page when scrolling.
+        Use either top or bottom and either left or right - defining both can get weird results. */
+        #adbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Default z-index is 0, so 1 is closer to the reader and ad covers the page content. */
+            width: 100%;
+            background-color: pink;
+            padding: 10px;
+        }
+
+        /* That adbar is covering the first element of the page, so let's add some margin to it */
+        div:first-child {
+            margin-top: 50px;
+        }
+
+        /* But first-child doesn't work in styling the first paragraph of each article,
+        because paragraph (p tag) is not the first element inside article (h1 is).
+        Instead, we can pick the first of the type "p" inside each article.  */
+        article p:first-of-type {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Lets add a little background to every other article too */
+        article:nth-child(even) {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Just removing the bullet points here and doing a bit of styling. */
+        ul#links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul#links li a {
+            display: block;
+            width: 100px;
+            color: lightblue;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: darkblue;
+            border: 2px solid darkblue;
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+
+        /* Hover (when mouse is over the link) is nice too. */
+        ul#links li a:hover {
+            background-color: lightblue;
+            color: darkblue;
+        }
+
+        /* Pseudo element ::before adds a new element as the first child of the specified container.
+        ::after adds it as the last child. For example, here we add little arrows to link bars. */
+        ul#links li a::after {
+            content: ">>"; /* what's inside the element */
+            float: right; /* This just moves (floats) the added element to the right next to the existing text */
+        }
+        
+        /* This removes the rounded corners and makes the bar bigger. */
+        #html5-skill::-webkit-meter-bar {
+            border-radius: 0px;
+            height: 30px;
+            width: 200px;
+        }
+        /* But in order to change the bar color, you need to target the values. */
+        #html5-skill::-webkit-meter-optimum-value, #html5-skill::-webkit-meter-suboptimum-value, #html5-skill::-webkit-meter-even-less-good-value {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="html5-skill">My skill with HTML5</label><br><br>
+        <meter id="html5-skill" value="0.7"></meter>
+    </div>
+
+    <br>
+    <!-- In order to use the Font Awesome icons, just specify the class(es) in i or span element. 
+    Full list: https://www.w3schools.com/icons/fontawesome_icons_webapp.asp -->
+    <i class="fa fa-html5" style="font-size:48px;"></i>
+
+    <div id="adbar">
+        Hello! I'm an advertisement!
+    </div>
+    <ul id="links">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+    </ul>
+    <article>
+        <h1>Test</h1>
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+    </article>
+    <article>
+        <h1>Test</h1>
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+    </article>
+    <article>
+        <h1>Test</h1>
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+    </article>
+    <article>
+        <h1>Test</h1>
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+    </article>
+
+    <article>
+        <h1>Test</h1>
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+
+        <p>blah blah blah</p>
+    </article>
+</body>
+</html>
