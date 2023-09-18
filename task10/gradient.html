@@ -8,8 +8,25 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <script src="gradient.js" async></script>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <h1>Linear gradient generator</h1>
+      <h2>Colors</h2>
+      <input type="color" name="color1" value="#FF0000" />
+      <input type="color" name="color2" value="#74009e" />
+      <h2>Directions</h2>
+      <div class="directions">
+        <input type="radio" name="direction" id="to_bottom_right" />
+        <label for="to_bottom_right"
+          ><span class="material-symbols-outlined">south_east</span></label
+        >
+      </div>
+    </form>
   </body>
 </html>
