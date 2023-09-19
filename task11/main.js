@@ -26,7 +26,7 @@ const getToTop = () => {
 }
 
 const mobMenu = () => {
-for (const item of menuItems){
+for (const item of menuItems) {
     item.addEventListener('click', mobMenu)
 }
     if (nav.classList.contains('responsive')) {

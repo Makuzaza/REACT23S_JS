@@ -15,6 +15,20 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+section,
+footer,
+header {
+  padding: 1rem;
+}
+
+section {
+    scroll-margin-top: 60px;
+}
+
+p {
+    margin: 0.5rem 0;
+  }
+
 header {
     display: flex;
     position: sticky;
@@ -29,14 +43,6 @@ header {
 
 li {
     display: inline-block;
-}
-
-section, footer, header {
-    padding: 1rem;
-}
-
-p, h2 {
-    margin: 0.5rem;
 }
 
 .btn {
@@ -55,12 +61,6 @@ p, h2 {
     bottom: 2rem;
     right: 2rem;
     display: none;
-}
-
-label {
-    position: fixed;
-    bottom: 2rem;
-    right: 0.5rem;
 }
 
 .mobile {
@@ -84,11 +84,12 @@ label {
     #backToTop {
         bottom: 1rem;
         right: 1rem;
-        text-transform: uppercase;
     }
+
     .btn {
         padding: 0.5rem;
     }
+    
     ul.responsive {
         display: block;
         background-color: white;
