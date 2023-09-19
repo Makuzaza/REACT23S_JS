@@ -6,7 +6,30 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    background-color: lightgreen;
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    background-color: rgb(218, 250, 218);
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+}
+
+section, footer, header {
+    padding: 1rem;
+}
+
+p {
+    margin: 0.5rem;
 }
