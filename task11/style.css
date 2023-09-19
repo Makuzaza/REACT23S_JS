@@ -30,6 +30,70 @@ section, footer, header {
     padding: 1rem;
 }
 
-p {
+p, h2 {
     margin: 0.5rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+}
+
+label {
+    position: fixed;
+    bottom: 2rem;
+    right: 0.5rem;
+}
+
+.mobile {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem
+}
+
+@media (max-width:500px) {
+    body {
+        background-color: pink;
+    } 
+    nav ul {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        bottom: 40rem
+    }
+    #backToTop {
+        bottom: 1rem;
+        right: 1rem;
+        text-transform: uppercase;
+    }
+    .btn {
+        padding: 0.5rem;
+    }
+    ul.responsive {
+        display: block;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+    }
+    ul.responsive li {
+        display: block;
+        margin: 1rem;
+    }
 }
