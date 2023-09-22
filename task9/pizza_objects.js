@@ -19,6 +19,7 @@ class Pizza {
         return this.basePrice + extraToppings * extraToppingPrice;
     }
 }
+
    
 const americano2 = new Pizza('americano', ['ham', 'tomato', 'cheese'], 1000);
 americano2.basePrice = 1100;
