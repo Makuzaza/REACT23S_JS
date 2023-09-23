@@ -37,9 +37,11 @@ class Pizza {
 const americano2 = new Pizza('americano', ['ham', 'tomato', 'cheese'], 1000);
 americano2.basePrice = 1100;
 
-const americano1 = new Pizza();
-americano1.name = 'americano';
-americano1.toppings = ['ham', 'tomato', 'cheese']
+const americano1 = new Pizza('americano', ['ham', 'tomato', 'cheese'], 1000); 
+
+// const americano1 = new Pizza();
+// americano1.name = 'americano';
+// americano1.toppings = ['ham', 'tomato', 'cheese']
 
 console.log(americano1.getPrice());
 
