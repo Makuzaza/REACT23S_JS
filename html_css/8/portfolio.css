@@ -1,0 +1,209 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    color: #333;
+    padding: 1rem;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#adbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Default z-index is 0, so 1 is closer to the reader and ad covers the page content. */
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+}
+
+.logo {
+    flex: 5;
+    padding: 1.5rem;
+}
+
+ul {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;  
+    list-style-type: none;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+ul li a {
+    padding: 1rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+li:hover {
+    background-color: rgb(175, 205, 230);
+}
+
+#first {
+    font-size: 25px;
+}
+
+#box {
+    align-items: center;
+    margin-top: 70px;
+    padding: 0px;
+}
+
+.grid-container {
+    margin: auto;
+    width: 900px;
+    display: grid;
+    text-align: center;
+    grid-gap: 0.4rem;
+    grid-template-areas: 
+    "i1 i1 i2 i2 i3 i3" 
+    "i1 i1 i2 i2 i3 i3" 
+    "i1 i1 i4 i4 i3 i3" 
+    "i1 i1 i4 i4 i3 i3" 
+    "i5 i6 i6 i6 i3 i3" 
+    "i7 i6 i6 i6 i8 i8" 
+    "i9 i6 i6 i6 i8 i8" ;
+    grid-template-rows: min-content;
+}
+
+.img > img {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0;
+    object-fit: cover;
+    display: block;
+  }
+  
+.i1 {
+    grid-area: i1;
+}
+
+.i2 {
+    grid-area: i2;
+}
+
+.i3 {
+    grid-area: i3;
+}
+
+.i4 {
+    grid-area: i4;
+}
+.i5 {
+    grid-area: i5;
+}
+
+.i6 {
+    grid-area: i6;
+}
+
+.i7 {
+    grid-area: i7;
+}
+
+.i8 {
+    grid-area: i8;
+}
+.i9 {
+    grid-area: i9;
+}
+
+.form {
+    margin-top: 30px;
+    background-color: rgb(18, 18, 18);
+    font-size: 13px;
+    color: #b5b2b2;
+    padding: 10px;
+}
+
+#container {
+    width: 80%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 20% 50%;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1rem;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+#contact {
+    color: white;
+    margin: 30px;
+    text-align: center;
+}
+
+.input-form {
+    border-radius: 5px;
+    width: 100%;
+}
+
+label {
+    text-align: left;
+}
+
+.button {
+    text-align: center;
+}
+
+footer {
+    font-size: 10px;
+    color: rgb(139, 138, 138);
+    text-align: center;
+    margin: 10px auto; 
+}
+
+.form button {
+    width: 10rem;
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+#container button:hover {
+    background: rgb(230, 49, 70);
+}
+
+::placeholder {
+    color: rgb(171, 172, 172);
+    font-size: 11px;
+}
+
+@media (max-width: 450px) {
+    #container {
+        display: grid;
+        width: 100%;
+    }}
