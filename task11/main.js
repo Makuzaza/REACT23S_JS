@@ -36,5 +36,11 @@ for (const item of menuItems) {
     }
 }
 
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
 backButton.addEventListener('click', getToTop)
 mobButton.addEventListener('click', mobMenu)
+popup.addEventListener('click', myFunction)
