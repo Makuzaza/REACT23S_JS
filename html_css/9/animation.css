@@ -79,7 +79,6 @@
     display: inherit;
     background: var(--primary-color);
     transition: 1s ease-in all;
-
 }
 
 .menu-item:hover h1::after {
