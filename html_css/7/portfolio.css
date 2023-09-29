@@ -258,7 +258,7 @@ footer {
     font-size: 11px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     #container {
         display: grid;
         width: 100%;

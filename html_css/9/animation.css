@@ -1,0 +1,40 @@
+:root {
+    --primary-color: rgb(219, 239, 120);
+    --secondary-color: rgb(20, 113, 189);
+    --neutral-color: cornsilk;
+    --dark-color: #333;
+    --light-color: #fff;
+    --font: "Comfortaa", cursive;
+    --gradient: linear-gradient(to right top, rgb(82, 213, 220) , rgb(237, 82, 237));
+ }
+ 
+ body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: var(--gradient);
+    font-family: var(--font);
+    height: 100vh;
+ }
+ 
+ .card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 150px;
+    background: var(--light-color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--dark-color);
+ }
+
+.circle {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+}
+

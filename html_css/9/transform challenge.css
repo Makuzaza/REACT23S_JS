@@ -1,0 +1,59 @@
+:root {
+    --primary-color: rgb(143, 240, 138);
+    --secondary-color: rgb(222, 114, 218);
+    --neutral-color: rgb(182, 178, 164);
+    --dark-color: #333;
+    --light-color: #fff;
+    --font: "Comfortaa", cursive;
+ }
+
+ .first-task {
+    height: 100px;
+    width: 100px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px var(--dark-color), inset 0 0 5px var(--dark-color);
+    transition: all 1s;
+}
+
+.first-task:hover {
+    background-color: var(--primary-color);
+    height: 300px;
+    width: 300px;
+}
+
+.second-task {
+    height: 100px;
+    width: 200px;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px var(--dark-color), inset 0 0 5px var(--dark-color);
+    transition: all 1s;
+}
+
+.second-task:hover {
+    background-color: var(--primary-color);
+    transform: rotate(180deg);
+}
+
+.third-task {
+    height: 100px;
+    width: 200px;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px var(--dark-color), inset 0 0 5px var(--dark-color);
+    transition: all 1s;
+}
+
+.third-task:hover {
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 150px;
+}
