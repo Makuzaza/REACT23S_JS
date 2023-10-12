@@ -251,7 +251,7 @@ img {
 .img2 {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    width: 300px;
+    width: 350px;
     padding: 0px 0px 30px 30px;
     transition: 0.5s all;
 }
@@ -309,7 +309,7 @@ img {
 }
 
 .i3 {
-    background-image: url("https://images.unsplash.com/photo-1519873174361-37788c5a73c7");
+    background-image: url("https://images.unsplash.com/photo-1517093911940-08cb5b3952e7");
     background-size: cover;
     grid-area: i3;
     -webkit-filter: grayscale(100%);
