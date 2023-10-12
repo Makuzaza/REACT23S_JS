@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="top">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="portfolio.css" />
@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <meta name="description" content="Portfolio" />
     <meta name="author" content="Maria K" />
     <meta name="keywords" content="Portfolio, CV, resume" />
@@ -20,7 +24,7 @@
   <body>
     <header id="box">
       <div class="header-content" id="adbar">
-        <h1 class="logo" id="first"><a href="#first">Maria Kuznetsova</a></h1>
+        <h1 class="logo" id="first"><a href="#top">Maria Kuznetsova</a></h1>
         <nav>
           <ul>
             <li><a href="#projects">Projects</a></li>
@@ -118,7 +122,7 @@
         <section>
           <div class="box2">
             <div>
-              <i class="fa fa-html5" style="font-size: 48px"></i>
+              <i class="fa fa-html5" style="font-size: 60px"></i>
             </div>
             <div class="project">HTML5</div>
             <div>
@@ -128,7 +132,7 @@
 
           <div class="box2">
             <div>
-              <i class="fa fa-css3" style="font-size: 48px"></i>
+              <i class="fa fa-css3" style="font-size: 60px"></i>
             </div>
             <div class="project">CSS3</div>
             <div>
@@ -138,7 +142,7 @@
 
           <div class="box2">
             <div>
-              <i class="fa fa-laptop" style="font-size: 48px"></i>
+              <i class="fa fa-laptop" style="font-size: 60px"></i>
             </div>
             <div class="project">Teaching</div>
             <div>
@@ -148,7 +152,7 @@
 
           <div class="box2">
             <div>
-              <i class="fa fa-users" style="font-size: 48px"></i>
+              <i class="fa fa-users" style="font-size: 60px"></i>
             </div>
             <div class="project">Couching</div>
             <div>
@@ -218,9 +222,14 @@
       </div>
 
       <div class="button">
-        <button type="submit">SEND MESSAGE</button>
-        <footer>Copyright &copy My website 2023</footer>
+        <button class="send">SEND MESSAGE</button>
       </div>
+      <footer>Copyright &copy My website 2023</footer>
+      <button id="backToTop" class="btn">
+        <span class="material-symbols-outlined">north</span>
+        <div class="back">Back to top</div>
+      </button>
     </div>
+    <script src="main.js" async></script>
   </body>
 </html>
