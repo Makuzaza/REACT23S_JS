@@ -1,6 +1,13 @@
+
 #answers {
     text-align: center;
-    padding: 0px 0px 50px 0px;
+    background-color: beige;
+    padding: 20px 0 20px 0;
+    color: #333;
+    text-shadow: none;
+    border-radius: 5px;
+    border-color: #333;
+    border-style: dashed;
 }
 
 div {
@@ -80,7 +87,7 @@ button {
     padding: 10px;
     color: white;
     border-radius: 20px;
-    margin: 20px;
+    margin: 5px;
     width: 300px;
     font-size: 25px;
 
@@ -92,6 +99,4 @@ button {
 
 #boxes {
     background-image: linear-gradient(to right, rgb(24, 105, 226), rgb(227, 15, 170));
-    height: 100vh;
-
 }
