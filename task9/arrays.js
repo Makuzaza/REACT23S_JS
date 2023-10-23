@@ -104,3 +104,4 @@ document.getElementById('task12').textContent = numbers[numbers.length - 1];
 //     }
 // });
 // console.log(players)
+
