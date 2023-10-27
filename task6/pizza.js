@@ -4,33 +4,12 @@ let toppings;
 
 const pizzaPrice = () => {
 
-    // let toppings = '';
-
     const size1 = document.querySelector('#size1');
     const size2 = document.querySelector('#size2');
     const size3 = document.querySelector('#size3');
     const size4 = document.querySelector('#size4');
-
-    // const topping1 = document.querySelector('#topping1');
-    // const topping2 = document.querySelector('#topping2');
-    // const topping3 = document.querySelector('#topping3');
-    // const topping4 = document.querySelector('#topping4');
-    // const topping5 = document.querySelector('#topping5');
-    // const topping6 = document.querySelector('#topping6');
-    // const topping7 = document.querySelector('#topping7');
-    // const topping8 = document.querySelector('#topping8');
-    // const topping9 = document.querySelector('#topping9');
-    // const topping10 = document.querySelector('#topping10');
-    // const topping11 = document.querySelector('#topping11');
-    // const topping12 = document.querySelector('#topping12');
-    // const topping13 = document.querySelector('#topping13');
-    // const topping14 = document.querySelector('#topping14');
-    // const topping15 = document.querySelector('#topping15');
-
     const delivery_way = document.querySelector('#delivery').value;
-
     const name = document.querySelector('#nameclient').value;
-
     const answer = document.querySelector('#answers');
 
 if (size1.checked) {
@@ -65,84 +44,6 @@ for (let i = 0; i < checkboxes.length; i++) {
         toppingCount = toppingCount + 1;
     }
 }
-
-// console.log(toppingCount)
-
-// if (topping1.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = topping1.value;
-//     console.log(toppings);
-// } 
-// if (topping2.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + '' + topping2.value;
-//     console.log(toppings);
-// } 
-// if (topping3.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping3.value;
-//     console.log(toppings);
-// } 
-// if (topping4.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping4.value;
-//     console.log(toppings);
-// } 
-// if (topping5.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping5.value;
-//     console.log(toppings);
-// } 
-// if (topping6.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping6.value;
-//     console.log(toppings);
-// } 
-// if (topping7.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping7.value;
-//     console.log(toppings);
-// } 
-// if (topping8.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping8.value;
-//     console.log(toppings);
-// } 
-// if (topping9.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping9.value;
-//     console.log(toppings);
-// } 
-// if (topping10.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping10.value;
-//     console.log(toppings);
-// } 
-// if (topping11.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping11.value;
-//     console.log(toppings);
-// } 
-// if (topping12.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping12.value;
-//     console.log(toppings);
-// }
-// if (topping13.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping13.value;
-//     console.log(toppings);
-// }
-// if (topping14.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping14.value;
-//     console.log(toppings);
-// }
-// if (topping15.checked) {
-//     toppingCount = toppingCount + 1;
-//     toppings = toppings + ', ' + topping15.value;
-//     console.log(toppings);
-// }
  
 let sum = 0;
 toppingCount = Number(toppingCount);
