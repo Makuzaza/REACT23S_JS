@@ -59,12 +59,12 @@ if (toppingCount > 4) {
     }
 }
 
-const sizeInputs = document.querySelectorAll('input[name="size"]');
+const sizeInputs = document.querySelectorAll('label[for="size1"], label[for="size2"], label[for="size3"], label[for="size4"]');
 for (const i of sizeInputs) {
     i.addEventListener('click', pizzaPrice);
 }
 
-const toppingCheckboxes = document.querySelectorAll('input[name="toppings"]');
+const toppingCheckboxes = document.querySelectorAll('label[for="topping1"], label[for="topping2"], label[for="topping3"], label[for="topping4"], label[for="topping5"], label[for="topping6"], label[for="topping7"], label[for="topping8"], label[for="topping9"], label[for="topping10"],label[for="topping11"],label[for="topping12"], label[for="topping13"],label[for="topping14"], label[for="topping15"]');
 for (const i of toppingCheckboxes) {
     i.addEventListener('click', pizzaPrice);
 };
@@ -73,4 +73,4 @@ const deliverySelect = document.querySelector('#delivery');
 deliverySelect.addEventListener('change', pizzaPrice);
 
 const nameSelect = document.querySelector('#nameclient');
-nameSelect.addEventListener('change', pizzaPrice);
+nameSelect.addEventListener('click', pizzaPrice);
