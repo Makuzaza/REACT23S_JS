@@ -1,27 +1,12 @@
-// connect to html file
-
 let current;
 
 const insuranceRisk = () => {
     let score = 500;
-    // const age1 = document.querySelector('#age1');
-    // const age2 = document.querySelector('#age2');
-    // const age3 = document.querySelector('#age3');
-    // const age4 = document.querySelector('#age4');
-    // const age5 = document.querySelector('#age5');
-    // const age6 = document.querySelector('#age6');
-    // const age7 = document.querySelector('#age7');
     const age = document.querySelector('#age').value;
-
-    // const current1 = document.querySelector('#current1');
-    // const current2 = document.querySelector('#current2');
-    // const current3 = document.querySelector('#current3');
-
     const name = document.querySelector('#name').value; 
-
     const answer = document.querySelector('#answers');
     if (!age) {
-        answer.innerHTML = 'Please write your age';
+        answer.innerHTML = 'Please write your age first';
         return;
     }
     if (age != Number(age)) {
@@ -69,21 +54,6 @@ for (let i = 0; i < checkboxes.length; i++) {
 console.log(values)
 console.log(score_current)
 
-// if (current1.checked) {
-//     score_current = score_current + (score_age*0.01);
-//     current = current1.value
-//     console.log(score_current);
-// }
-// if (current2.checked) {
-//     score_current = score_current + (score_age*0.01);
-//     current = current + '' + current2.value
-//     console.log(score_current);
-// }
-// if (current3.checked) {
-//     score_current = score_current + (score_age*0.01);
-//     current = current + ', ' + current3.value
-//     console.log(score_current);}
-
 let score_goodHabits = score_age;
 let score_gap = score_age*0.05;
 let checkboxes_goodHabits = document.querySelectorAll('input[name="good_habits"]');
@@ -114,13 +84,13 @@ console.log(score_badHabits);
 let totalscore;
 totalscore = score_badHabits + (score_current - score_age);
 
-answer.innerHTML = `${name}, You chose age: ${age} <br> Your current health: ${values} 
-<br> Your good health habits: ${valuesHabits} 
-<br> Unhealthy Habits: ${valuesBadHabits}<br> Your riskscore: ${totalscore}`;
+answer.innerHTML = `${name}, You choose age: ${age} <br> Your current health: <div class="total">${values}</div>
+Your good health habits: <div class="total">${valuesHabits}</div>
+Unhealthy Habits: <div class="total">${valuesBadHabits}</div> Your riskscore: <div class="score">${totalscore}</div>`;
 }
 
 const nameSelect = document.querySelector('#name');
-nameSelect.addEventListener('change', insuranceRisk);
+nameSelect.addEventListener('click', insuranceRisk);
 
 const ageSelect = document.querySelector('#age');
 ageSelect.addEventListener('change', insuranceRisk);

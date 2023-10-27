@@ -22,155 +22,274 @@
 
       <div class="row">
         <div class="column">
-          <label for="name">1. Your name</label><br />
-          <input
-            class="name"
-            type="text"
-            name="name"
-            id="name"
-            placeholder="enter your name"
-          /><br />
+          <div>
+            <div class="heads">1. Your name</div>
+            <input
+              class="name"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="enter your name"
+            />
+          </div>
 
-          <br /><br />
-          <label for="age">2. Your age:</label><br />
-          <input
-            class="age"
-            type="text"
-            name="age"
-            id="age"
-            placeholder="enter your age"
-          />
-          <!-- <input type="radio" id="age2" value="18-25" name="age" />18-25<br />
-          <input type="radio" id="age3" value="26-35" name="age" />26-35<br />
-          <input type="radio" id="age4" value="36-45" name="age" />36-45<br />
-          <input type="radio" id="age5" value="46-55" name="age" />46-55<br />
-          <input type="radio" id="age6" value="56-65" name="age" />56-65<br />
-          <input type="radio" id="age7" value="66+" name="age" />66+<br /> -->
-          <br /><br />
-          <label for="current">3. Current Health:</label><br />
-          Your current health status. <br />You can select one or more of the
-          following options<br />
-          <input
-            type="checkbox"
-            id="current1"
-            value=" Hypertension"
-            name="current"
-          />Hypertension<br />
-          <input
-            type="checkbox"
-            id="current2"
-            value=" High Blood Sugar"
-            name="current"
-          />High Blood Sugar<br />
-          <input
-            type="checkbox"
-            id="current3"
-            value=" Overweight"
-            name="current"
-          />Overweight<br /><br />
+          <div>
+            <div class="heads">2. Your age:</div>
+            <input
+              class="age"
+              type="text"
+              name="age"
+              id="age"
+              placeholder="enter your age"
+            />
+          </div>
+          <div>
+            <div>
+              <div class="heads">3. Current Health:</div>
 
+              Your current health status. <br />You can select one or more of
+              the following options:
+            </div>
+            <br />
+            <label for="current1"
+              ><input
+                type="checkbox"
+                id="current1"
+                value=" Hypertension"
+                name="current"
+              /><b>Hypertension</b></label
+            ><br />
+            <label for="current2"
+              ><input
+                type="checkbox"
+                id="current2"
+                value=" High Blood Sugar"
+                name="current"
+              /><b>High Blood Sugar</b></label
+            ><br />
+            <label for="current3"
+              ><input
+                type="checkbox"
+                id="current3"
+                value=" Overweight"
+                name="current"
+              /><b>Overweight</b></label
+            >
+          </div>
           <p id="answers">Your riskscore will be here</p>
         </div>
 
         <div class="column">
-          <label for="habits">4. Habits:</label>
-          <br />
-          Specify your habits. You can select one or more of the following
-          options
-          <br />
-          <br />
-          <label for="good_habits">Good Health Habits:</label><br />
-          <input
-            type="checkbox"
-            id="habit1"
-            value=" Regular Exercise"
-            name="good_habits"
-          />Regular Exercise: Engaging in physical activity and exercise on a
-          regular basis.<br />
-          <input
-            type="checkbox"
-            id="habit2"
-            value=" Healthy Diet"
-            name="good_habits"
-          />Healthy Diet: Maintaining a balanced and nutritious diet.
-          <br />
-          <input
-            type="checkbox"
-            id="habit3"
-            value=" Adequate Sleep"
-            name="good_habits"
-          />Adequate Sleep: Ensuring you get enough restful sleep each night.
-          <br />
-          <input
-            type="checkbox"
-            id="habit4"
-            value=" Stress Management"
-            name="good_habits"
-          />Stress Management: Practicing stress-reduction techniques such as
-          meditation or yoga.<br />
-          <input
-            type="checkbox"
-            id="habit5"
-            value=" Moderate alcohol consumption"
-            name="good_habits"
-          />Moderate Alcohol Consumption: Consuming alcohol in moderation, if at
-          all.
-          <br />
-          <input
-            type="checkbox"
-            id="habit6"
-            value=" Non-Smoking"
-            name="good_habits"
-          />Non-Smoking: Not smoking or using tobacco products.
+          <div>
+            <div class="heads">4. Habits:</div>
+            Specify your habits. You can select one or more of the following
+            options
+          </div>
+          <div id="goods">
+            <div class="heads">Good Health Habits:</div>
+            <label for="habit1"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit1"
+                    value=" Regular Exercise"
+                    name="good_habits"
+                  />
+                </div>
+                <div>
+                  <b>Regular Exercise</b>: Engaging in physical activity and
+                  exercise on a regular basis.
+                </div>
+              </div></label
+            >
+            <label for="habit2"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit2"
+                    value=" Healthy Diet"
+                    name="good_habits"
+                  />
+                </div>
+                <div>
+                  <b>Healthy Diet</b>: Maintaining a balanced and nutritious
+                  diet.
+                </div>
+              </div></label
+            >
 
-          <br /><br />
+            <label for="habit3"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit3"
+                    value=" Adequate Sleep"
+                    name="good_habits"
+                  />
+                </div>
+                <div>
+                  <b>Adequate Sleep</b>: Ensuring you get enough restful sleep
+                  each night.
+                </div>
+              </div></label
+            >
 
-          <label for="bad_habits">Unhealthy Habits:</label><br />
-          <input
-            type="checkbox"
-            id="habit7"
-            value=" Smoking"
-            name="bad_habits"
-          />Smoking: Regularly smoking cigarettes or using tobacco products.<br />
-          <input
-            type="checkbox"
-            id="habit8"
-            value=" Excessive Alcohol Consumption"
-            name="bad_habits"
-          />Excessive Alcohol Consumption: Consuming alcohol in large quantities
-          or frequently.
-          <br />
-          <input
-            type="checkbox"
-            id="habit9"
-            value=" Lack of Exercise"
-            name="bad_habits"
-          />Lack of Exercise: Leading a sedentary lifestyle with little to no
-          physical activity.
-          <br />
-          <input
-            type="checkbox"
-            id="habit10"
-            value=" Poor Diet"
-            name="bad_habits"
-          />Poor Diet: Consistently consuming unhealthy foods high in sugar,
-          fats, and processed ingredients.
-          <br />
-          <input
-            type="checkbox"
-            id="habit11"
-            value=" Inadequate Sleep"
-            name="bad_habits"
-          />Inadequate Sleep: Not getting enough sleep or having irregular sleep
-          patterns.
-          <br />
-          <input
-            type="checkbox"
-            id="habit12"
-            value=" Drug Use"
-            name="bad_habits"
-          />Drug Use: Engaging in the use of illegal drugs or misusing
-          prescription medications. <br />
+            <label for="habit4"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit4"
+                    value=" Stress Management"
+                    name="good_habits"
+                  />
+                </div>
+                <div>
+                  <b>Stress Management</b>: Practicing stress-reduction
+                  techniques such as meditation or yoga.
+                </div>
+              </div></label
+            >
+            <label for="habit5"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit5"
+                    value=" Moderate alcohol consumption"
+                    name="good_habits"
+                  />
+                </div>
+                <div>
+                  <b>Moderate Alcohol Consumption</b>: Consuming alcohol in
+                  moderation, if at all.
+                </div>
+              </div></label
+            >
+
+            <label for="habit6"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit6"
+                    value=" Non-Smoking"
+                    name="good_habits"
+                  />
+                </div>
+                <div class="last">
+                  <b>Non-Smoking</b>: Not smoking or using tobacco products.
+                </div>
+              </div></label
+            >
+          </div>
+
+          <div id="bads">
+            <div class="heads">Unhealthy Habits:</div>
+            <label for="habit7"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit7"
+                    value=" Smoking"
+                    name="bad_habits"
+                  />
+                </div>
+                <div>
+                  <b>Smoking</b>: Regularly smoking cigarettes or using tobacco
+                  products.
+                </div>
+              </div></label
+            >
+            <label for="habit8"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit8"
+                    value=" Excessive Alcohol Consumption"
+                    name="bad_habits"
+                  />
+                </div>
+                <div>
+                  <b>Excessive Alcohol Consumption</b>: Consuming alcohol in
+                  large quantities or frequently.
+                </div>
+              </div></label
+            >
+
+            <label for="habit9"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit9"
+                    value=" Lack of Exercise"
+                    name="bad_habits"
+                  />
+                </div>
+                <div>
+                  <b>Lack of Exercise</b>: Leading a sedentary lifestyle with
+                  little to no physical activity.
+                </div>
+              </div></label
+            >
+
+            <label for="habit10"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit10"
+                    value=" Poor Diet"
+                    name="bad_habits"
+                  />
+                </div>
+                <div>
+                  <b>Poor Diet</b>: Consistently consuming unhealthy foods high
+                  in sugar, fats, and processed ingredients.
+                </div>
+              </div></label
+            >
+
+            <label for="habit11"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit11"
+                    value=" Inadequate Sleep"
+                    name="bad_habits"
+                  />
+                </div>
+                <div>
+                  <b>Inadequate Sleep</b>: Not getting enough sleep or having
+                  irregular sleep patterns.
+                </div>
+              </div></label
+            >
+
+            <label for="habit12"
+              ><div class="block">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit12"
+                    value=" Drug Use"
+                    name="bad_habits"
+                  />
+                </div>
+                <div class="last">
+                  <b>Drug Use</b>: Engaging in the use of illegal drugs or
+                  misusing prescription medications.
+                </div>
+              </div>
+            </label>
+          </div>
         </div>
       </div>
 
