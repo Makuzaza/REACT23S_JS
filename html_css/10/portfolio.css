@@ -81,8 +81,9 @@ li:hover {
 }
 
 .mobile{
-    background-color: rgb(238, 185, 169);
-    border-radius: 5px;
+    background-color: rgb(238, 193, 200);
+    border: none;
+    margin: 0 15px 0 0;
 
 }
 
