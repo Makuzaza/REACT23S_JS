@@ -81,10 +81,7 @@ li:hover {
 }
 
 .mobile{
-    background-color: rgb(238, 193, 200);
-    border: none;
-    margin: 0 15px 0 0;
-
+  display: none;
 }
 
 #second {
@@ -542,6 +539,9 @@ footer {
     }
     .mobile {
         display: block;
+        background-color: rgb(238, 193, 200);
+        border: none;
+        margin: 0 15px 0 0;
     }
     .btn {
         padding: 0.5rem;
